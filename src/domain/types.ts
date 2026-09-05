@@ -5,6 +5,7 @@ export interface TinyWaitingItem {
   id: string;
   subject: string;
   waitingOn: string;
+  personId?: string;
   status: TinyWaitingStatus;
   createdAt: string;
   updatedAt: string;
@@ -16,6 +17,7 @@ export interface TinyWaitingItem {
 export interface CreateTinyWaitingInput {
   subject: string;
   waitingOn: string;
+  personId?: string;
   followUpAt?: string;
   projectId?: string;
   note?: string;
